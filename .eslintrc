@@ -5,8 +5,12 @@
     "node": true
   },
   "extends": ["react-app", "plugin:jsx-a11y/recommended"],
-  "plugins": ["jsx-a11y", "emotion"],
+  "plugins": ["jsx-a11y", "@emotion"],
   "rules": {
-    "emotion/syntax-preference": [2, "string"]
+    "@emotion/pkg-renaming": "error",
+    "@emotion/jsx-import": "error",
+    "@emotion/no-vanilla": "error",
+    "@emotion/import-from-emotion": "error",
+    "@emotion/styled-import": "error"
   }
 }

@@ -1,6 +1,5 @@
-import { css } from 'emotion';
+import { css, keyframes } from '@emotion/react';
 import facepaint from 'facepaint';
-import { keyframes } from 'react-emotion';
 
 const breakpoints = [768, 1024];
 const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`));
@@ -21,7 +20,7 @@ const hero = css`
   flex-direction: column;
   display: flex;
   justify-content: center;
-  align-items: strech;
+  align-items: stretch;
   padding: 0 10%;
   text-align: center;
 

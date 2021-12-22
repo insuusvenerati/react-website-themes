@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'gatsby';
-import { cx } from 'emotion';
+import { cx } from '@emotion/css';
 
 const Menu = props => {
   const { items, themeStyle = '', customStyle = '' } = props;

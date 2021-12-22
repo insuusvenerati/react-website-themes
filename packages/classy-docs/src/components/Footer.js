@@ -1,6 +1,6 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
-import React from 'react';
-import { cx } from 'emotion';
 
 import style from '../styles/footer';
 
@@ -8,7 +8,7 @@ const Footer = props => {
   const { links, copyright, themeStyle = style, customStyle = '' } = props;
 
   return (
-    <footer className={cx(themeStyle, customStyle)}>
+    <footer css={[themeStyle, customStyle]}>
       <div className="links" dangerouslySetInnerHTML={{ __html: links }} />
       <div
         className="copyright"
@@ -30,7 +30,8 @@ const Footer = props => {
         | Design by{' '}
         <a href="https://github.com/greglobinski/react-website-themes">
           React Website Themes
-        </a>.
+        </a>
+        .
       </div>
     </footer>
   );

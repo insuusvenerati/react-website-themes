@@ -1,4 +1,4 @@
-import { css } from 'emotion';
+import { css } from '@emotion/react';
 
 const page = css`
   display: block;

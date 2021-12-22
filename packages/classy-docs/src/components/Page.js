@@ -1,13 +1,14 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { cx } from 'emotion';
 
 import style from '../styles/page';
 
 const Page = props => {
   const { children, themeStyle = style, customStyle = '' } = props;
 
-  return <div className={cx(themeStyle, customStyle)}>{children}</div>;
+  return <div css={[themeStyle, customStyle]}>{children}</div>;
 };
 
 Page.propTypes = {

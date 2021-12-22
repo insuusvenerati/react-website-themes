@@ -1,6 +1,7 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cx } from 'emotion';
 
 import style from '../styles/bodytext';
 
@@ -11,7 +12,7 @@ const Bodytext = props => {
     <React.Fragment>
       {html ? (
         <div
-          className={cx(themeStyle, customStyle)}
+          css={[themeStyle, customStyle]}
           dangerouslySetInnerHTML={{ __html: html }}
         />
       ) : (

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ShareBlockStandard } from 'react-custom-share';
-import { cx } from 'emotion';
+import { cx } from '@emotion/css';
 
 const PostShare = props => {
   const { themeStyle = '', customStyle = '', shareBlockProps } = props;

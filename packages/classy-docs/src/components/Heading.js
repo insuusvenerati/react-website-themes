@@ -1,6 +1,6 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
-import { cx } from 'emotion';
 
 import style from '../styles/heading';
 
@@ -8,7 +8,7 @@ const Heading = props => {
   const { title, children, themeStyle = style, customStyle = '' } = props;
 
   return (
-    <header className={cx(themeStyle, customStyle)}>
+    <header css={[themeStyle, customStyle]}>
       {title ? <h1>{title}</h1> : children}
     </header>
   );

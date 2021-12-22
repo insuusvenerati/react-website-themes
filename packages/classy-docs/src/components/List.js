@@ -1,7 +1,8 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import { cx } from 'emotion';
 
 import style from '../styles/list';
 
@@ -47,7 +48,7 @@ const List = props => {
   const pagesInCategories = organizePagesInCategories(pages, categoryList);
 
   return (
-    <div className={cx(themeStyle, customStyle)}>
+    <div css={[themeStyle, customStyle]}>
       {pagesInCategories.map(category => {
         const { label, icon: Icon } = category;
 

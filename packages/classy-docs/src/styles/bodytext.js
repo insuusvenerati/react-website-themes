@@ -1,4 +1,4 @@
-import { css } from 'emotion';
+import { css } from '@emotion/react';
 
 const bodytext = css`
   margin-bottom: 50px;

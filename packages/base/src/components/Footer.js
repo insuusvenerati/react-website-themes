@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { cx } from 'emotion';
+import { cx } from '@emotion/css';
 
 const Footer = props => {
   const { links, copyright, themeStyle = '', customStyle = '' } = props;
@@ -28,7 +28,8 @@ const Footer = props => {
         | Design by{' '}
         <a href="https://github.com/greglobinski/react-website-themes">
           React Website Themes
-        </a>.
+        </a>
+        .
       </div>
     </footer>
   );

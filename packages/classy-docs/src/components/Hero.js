@@ -1,7 +1,7 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cx } from 'emotion';
-
 import style from '../styles/hero';
 
 const Hero = props => {
@@ -11,11 +11,11 @@ const Hero = props => {
     <React.Fragment>
       {html ? (
         <section
-          className={cx(themeStyle, customStyle)}
+          css={[themeStyle, customStyle]}
           dangerouslySetInnerHTML={{ __html: html }}
         />
       ) : (
-        <section className={`${themeStyle}`}>{children}</section>
+        <section css={[themeStyle]}>{children}</section>
       )}
     </React.Fragment>
   );

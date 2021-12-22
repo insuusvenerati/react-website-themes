@@ -1,7 +1,8 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'gatsby';
-import { cx } from 'emotion';
 
 import style from '../styles/menu';
 
@@ -9,7 +10,7 @@ const Menu = props => {
   const { items, themeStyle = style, customStyle = '' } = props;
 
   return (
-    <nav className={cx(themeStyle, customStyle)}>
+    <nav css={[themeStyle, customStyle]}>
       <ul>
         {items.map(item => {
           const { label, to, icon: Icon, external, linkProps } = item;

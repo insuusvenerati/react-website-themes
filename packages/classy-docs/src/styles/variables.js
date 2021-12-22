@@ -1,5 +1,5 @@
 import 'typeface-merriweather-sans';
-import { injectGlobal } from 'emotion';
+import { injectGlobal } from '@emotion/css';
 
 const variables = injectGlobal`
   :root {

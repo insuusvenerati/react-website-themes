@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { cx } from 'emotion';
+import { cx } from '@emotion/css';
 
 const Branding = props => {
   const { title, subTitle, themeStyle = '', customStyle = '' } = props;

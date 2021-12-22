@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { cx } from 'emotion';
+import { cx } from '@emotion/css';
 
 const Layout = props => {
   const { children, themeStyle = '', customStyle = '' } = props;

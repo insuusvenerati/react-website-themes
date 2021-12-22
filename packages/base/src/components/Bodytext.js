@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cx } from 'emotion';
+import { cx } from '@emotion/css';
 
 const Bodytext = props => {
   const { html, children, themeStyle = '', customStyle = '' } = props;

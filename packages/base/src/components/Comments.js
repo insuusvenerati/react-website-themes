@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FacebookProvider, { Comments as FBComments } from 'react-facebook';
-import { cx } from 'emotion';
+import { cx } from '@emotion/css';
 
 const Comments = props => {
   const {

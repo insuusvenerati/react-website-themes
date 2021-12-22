@@ -1,13 +1,13 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
-import { cx } from 'emotion';
 
 import style from '../styles/article';
 
 const Article = props => {
   const { children, themeStyle = style, customStyle = '' } = props;
 
-  return <article className={cx(themeStyle, customStyle)}>{children}</article>;
+  return <article css={[themeStyle, customStyle]}>{children}</article>;
 };
 
 Article.propTypes = {

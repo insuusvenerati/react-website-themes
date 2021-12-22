@@ -1,8 +1,9 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import GithubSlugger from 'github-slugger';
-import { cx } from 'emotion';
 
 import style from '../styles/sidebar';
 
@@ -57,7 +58,7 @@ const Sidebar = props => {
   const pagesInCategories = organizePagesInCategories(pages, categoryList);
 
   return (
-    <aside className={cx(themeStyle, customStyle)}>
+    <aside css={[themeStyle, customStyle]}>
       <h2>{title}</h2>
       {pagesInCategories.map(category => {
         const { label, icon: Icon } = category;
